@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    #preloader{
+        @apply flex max-w-full h-screen z-50 justify-center items-center bg-greyish-blue
+    }
+    #container{
+        @apply h-10 w-10 rounded-full
+    }
+    #bouncer-1{
+        @apply animate-ping h-10 w-10 rounded-full absolute opacity-75 bg-white
+    }
+    #bouncer-2{
+        @apply h-10 w-10 rounded-full relative bg-white
+    }
+}

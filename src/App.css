@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@700&display=swap');
+
+@layer components{
+  .navbar li{
+    @apply ml-[2vw] mr-[2vw] text-xl font-bold pt-1
+  }
+  .social_media span,.arrowTop {
+    @apply px-4 py-3 border-zinc-500 border-x border-y rounded-full cursor-pointer hover:transition-colors hover:duration-300 hover:ease-in
+  }
+  #carousal::-webkit-scrollbar{
+    @apply bg-transparent h-3
+  }
+  #carousal::-webkit-scrollbar-thumb{
+    @apply rounded-xl bg-green-600 opacity-80
+  }
+  .message{
+    @apply flex flex-wrap flex-col w-full justify-center items-center p-2
+  }
+  .message div{
+    @apply flex flex-wrap w-full justify-center
+  }
+  .message input{
+    @apply bg-slate-700 rounded-3xl p-4 m-[0.75%] text-white w-1/4 h-14
+  }
+  .message textarea{
+    @apply bg-slate-700 rounded-3xl p-4 m-[0.75%] text-white w-[78%] h-40 resize-y
+  }
+}
