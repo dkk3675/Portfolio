@@ -20,7 +20,7 @@
   "scripts": {
     "build": "react-scripts build",
     "frontend": "react-scripts start",
-    "backend": "nodemon backend",
+    "backend": "node backend.js",
     "dev": " concurrently \"npm run build\" \"npm run backend\" "
   },
   "eslintConfig": {
