@@ -10,7 +10,8 @@ app.use(cors({ origin: process.env.FROM_SERVER }));
 
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
-console.log("Hello",process.env.MONGO_URI);
+const mongo = process.env.MONGO_URI;
+console.log("Hello",mongo);
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(process.env.TO_PORT,() => {
