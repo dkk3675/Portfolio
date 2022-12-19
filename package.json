@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "frontend": "react-scripts start",
     "backend": "nodemon backend",
-    "start": " concurrently \"npm run frontend\" \"npm run backend\" "
+    "dev": " concurrently \"npm run build\" \"npm run backend\" "
   },
   "eslintConfig": {
     "extends": [
