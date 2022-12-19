@@ -10,9 +10,7 @@ app.use(cors({ origin: process.env.FROM_SERVER }));
 
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
-const mongo = process.env.MONGO_URI;
-console.log("Hello",mongo);
-mongoose.connect(mongo)
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(process.env.TO_PORT,() => {
       console.log(`Connected to DB at Port ${process.env.TO_PORT}`);
