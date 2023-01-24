@@ -17,9 +17,11 @@ const Contact = ({ modeDark }) => {
                 message: formDetails.message.trim(), 
             }),
         })
+        .then(() => {
+            alert("Message Conveyed Successfully!!!"); 
+        })
         .catch(err => console.log(err));
-        alert("Message Conveyed Successfully!!!"); 
-        window.location.reload(false);
+        // window.location.reload(false);
     };
     return(
         <section id="contact" className="flex flex-wrap flex-col w-full font-quicksand font-semibold pt-20 pb-5">
