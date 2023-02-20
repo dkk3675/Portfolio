@@ -12,7 +12,7 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
-    app.listen(process.env.TO_PORT,() => {
+    app.listen(process.env.PORT,() => {
       console.log(`Connected to DB at Port ${process.env.PORT}`);
     });
   })
