@@ -10,13 +10,13 @@ const Home = () => {
             <div className="flex flex-wrap w-full justify-center items-center md:w-7/12">
                 <div className='block font-quicksand m-20 md:pl-7'>
                     <span className='bg-green-600 rounded-t-full rounded-bl-full pt-4 pb-4 pl-7 pr-7 font-medium text-sm'>Hello There!</span>
-                    <h1 className="font-bold text-5xl mt-8 mb-4">I'M Nick Berg</h1>
-                    <h4 className="font-semibold text-2xl mb-4">Developer & Marketer</h4>
-                    <span className='font-mono text-sm'><i className="fa fa-map-marker mr-6" />3481 Melrose Place, Beverly Hills CA 90210.</span>
+                    <h1 className="font-bold text-5xl mt-8 mb-4">I'M Divya Kumar Karan</h1>
+                    <h4 className="font-semibold text-2xl mb-4">Software/Full Stack/Blockchain Developer</h4>
+                    <span className='font-mono text-sm'><i className="fa fa-map-marker mr-6" />Nagpur, Maharashtra</span>
                     <br />
-                    <span className='font-mono text-sm leading-10'><i className="fa fa-phone mr-5" />01872 - 12 34 56</span>
+                    <span className='font-mono text-sm leading-10'><i className="fa fa-phone mr-5" />(+91) 9637861774</span>
                     <br />
-                    <span className='font-mono text-sm'><i className="fa fa-envelope mr-4" />yourmail@mail.com</span>
+                    <span className='font-mono text-sm'><i className="fa fa-envelope mr-4" />kumar.divya3675@gmail.com</span>
                     <br /> 
                     <ul className='social_media list-none text-base inline-flex mt-5 items-center justify-center'>
                         <li className='m-5'><a href="https://github.com/dkk3675" target="blank" title='GitHub'><span className='hover:bg-purple-900 hover:border-purple-900'><i className="fa fa-github"/></span></a></li>

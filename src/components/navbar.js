@@ -17,11 +17,11 @@ const Navbar = ({ modeDark,setModeDark }) => {
     return(
         <section id='navbar' className="w-[100vw] fixed z-50 opacity-80">
             <header className={ `${ showScroll ? 'bg-green-600 animate-fade-in-up' : 'bg-transparent animate-fade-in-down' } font-quicksand pt-[3vh] pb-[3vh]` }>
-                <a href='/' className='hidden md:inline-block md:text-3xl md:font-extrabold md:ml-10'>Nick Berg</a>
+                <a href='/' className='hidden md:inline-block md:text-3xl md:font-extrabold md:ml-10'>Divya Kumar Karan</a>
                 <ul className="navbar list-none flex flex-wrap justify-center md:inline-flex md:float-right md:mr-10">
                     <li><button onClick={ () => { scrollBehaviour('home'); } }>Home</button></li>
                     <li><button onClick={ () => { scrollBehaviour('about'); } }>About</button></li>
-                    <li><button onClick={ () => { scrollBehaviour('skills'); } }>Skills</button></li>
+                    <li><button onClick={ () => { scrollBehaviour('skills'); } }>Projects</button></li>
                     <li><button onClick={ () => { scrollBehaviour('contact'); } }>Contact</button></li>
                     <li><button onClick={ () => { modeDark ? setModeDark(false) : setModeDark(true); } } className="border-0 ml-[2vw] mr-0 text-2xl"><i className={ `fa ${ modeDark ? 'fa-sun-o text-white' : 'fa-moon-o text-black' }` } /></button></li>
                 </ul>
