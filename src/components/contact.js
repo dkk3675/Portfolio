@@ -8,9 +8,8 @@ const Contact = ({ modeDark }) => {
         await fetch(process.env.REACT_APP_TO_SERVER, {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json"
           },
-          referrerPolicy: "unsafe_url",
           body: JSON.stringify({
             name: formDetails.name.trim(),
             email: formDetails.email.trim(),
