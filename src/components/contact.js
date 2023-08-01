@@ -5,19 +5,19 @@ const Contact = ({ modeDark }) => {
     const [formDetails,setFormDetails] = useState({ name: '', email: '', subject: '', message: '', });
     const onSendMessage = async (e) => {
         e.preventDefault();
-        await fetch(process.env.REACT_APP_TO_SERVER,{
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ 
-                name: formDetails.name.trim(), 
-                email: formDetails.email.trim(), 
-                subject: formDetails.subject.trim(), 
-                message: formDetails.message.trim(), 
-            }),
-        })
-        .catch(err => console.log(err));
+        await fetch(process.env.REACT_APP_TO_SERVER, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          referrerPolicy: "unsafe_url",
+          body: JSON.stringify({
+            name: formDetails.name.trim(),
+            email: formDetails.email.trim(),
+            subject: formDetails.subject.trim(),
+            message: formDetails.message.trim(),
+          }),
+        }).catch((err) => console.log(err));
         alert("Message Conveyed Successfully!!!"); 
         window.location.reload(false);
     };
