@@ -18,7 +18,7 @@ const Contact = ({ modeDark }) => {
           }),
         }).catch((err) => console.log(err));
         alert("Message Conveyed Successfully!!!"); 
-        window.location.reload(false);
+        // window.location.reload(false);
     };
     return (
       <section
